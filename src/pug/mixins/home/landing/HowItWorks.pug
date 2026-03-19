@@ -6,7 +6,7 @@ mixin TabContent(config)
     .col-md-5.text-white.offset-lg-1
       p.mb-0=config.text
 
-mixin HowItWorksTab 
+mixin HowItWorksTab
   ul.nav.justify-content-between
     li.nav-item(role='presentation')
       a(href='#bootstrap-tab1' data-bs-toggle='tab' data-bs-target='#tab1'  ).nav-link.active.fw-semi-bold#tab-1
@@ -33,24 +33,24 @@ mixin HowItWorksTab
             | 04
 
   .tab-content#myTabContent
-    .tab-pane.fade.show.active#tab1(role='tabpanel' aria-labelledby='tab-1') 
-      +TabContent({title: 'Select your farmshare and complete reservation form here.', text: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere'})
+    .tab-pane.fade.show.active#tab1(role='tabpanel' aria-labelledby='tab-1')
+      +TabContent({title: 'Discovery & Analysis: We listen to understand your business challenges.', text: 'Our consultants work closely with your team to analyze existing workflows, identify pain points, and define clear objectives for digital transformation.'})
     .tab-pane.fade#tab2(role='tabpanel' aria-labelledby='tab-2')
-      +TabContent({title: 'The Farm Share has been one of the best new additions to our life', text: 'We the farmers choose the vegetables in your share each week. A Farm Share is perfect for those who love the weekly surprise, and who look forward to cooking with inspiration from the seasons.'})
-    .tab-pane.fade#tab3(role='tabpanel' aria-labelledby='tab-3') 
-      +TabContent({title: 'There is so much love and thought put into this CSA. You can feel that.', text: 'We the farmers choose the vegetables in your share each week. A Farm Share is perfect for those who love the weekly surprise, and who look forward to cooking with inspiration from the seasons.'})
-    .tab-pane.fade#tab4(role='tabpanel' aria-labelledby='tab-4') 
-      +TabContent({title: 'The Farm Share has been one of the best new additions to our life', text: 'We the farmers choose the vegetables in your share each week. A Farm Share is perfect for those who love the weekly surprise, and who look forward to cooking with inspiration from the seasons.'})
+      +TabContent({title: 'Strategy & Design: We architect the perfect solution for your needs.', text: 'Based on our analysis, we design a comprehensive solution blueprint including technology stack, integration points, and implementation roadmap with clear milestones.'})
+    .tab-pane.fade#tab3(role='tabpanel' aria-labelledby='tab-3')
+      +TabContent({title: 'Development & Integration: We build and connect with precision.', text: 'Our agile development team brings the solution to life, integrating seamlessly with your existing systems while maintaining rigorous quality assurance at every step.'})
+    .tab-pane.fade#tab4(role='tabpanel' aria-labelledby='tab-4')
+      +TabContent({title: 'Deployment & Support: We ensure long-term success and growth.', text: 'After thorough testing, we deploy your solution and provide ongoing maintenance, monitoring, and optimization to ensure peak performance and continuous improvement.'})
 
 
-mixin HowItWorks 
+mixin HowItWorks
   section.py-0
     +Background({ image: `${CWD}assets/img/illustrations/how-it-works.png`, attrs: { style: { 'background-position': 'center bottom', 'background-size': 'cover'} }, className: '' })
     .container-lg
       .row.justify-content-center
         .col-sm-8.col-md-9.col-xl-5.text-center.pt-8
-          h5.fw-bold.fs-3.fs-xxl-5.lh-sm.mb-3.text-white How it works
-          p.mb-5.text-white Take your pick from the supply chain and participate in agribusiness projects that are backed up not only by Zou, but also by the best land, family heritage, innovation and overall superior expertise.
+          h5.fw-bold.fs-3.fs-xxl-5.lh-sm.mb-3.text-white How We Work
+          p.mb-5.text-white Our proven four-step methodology ensures every project is delivered on time, within budget, and exceeds expectations. From initial consultation to ongoing support, we are your trusted technology partner.
         .col-sm-9.col-md-12.col-xxl-9
           .theme-tab
-            +HowItWorksTab 
+            +HowItWorksTab

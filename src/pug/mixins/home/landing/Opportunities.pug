@@ -3,18 +3,18 @@ append variables
     var opportunities= [
       {
         image:'farmer.svg',
-        title  :'Connect with our farmers',
-        text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione',
+        title  :'Process Automation',
+        text: 'Eliminate repetitive tasks and manual workflows with intelligent automation. Our RPA and AI-powered tools accelerate operations and reduce human error.',
       },
       {
         image:'growth.svg',
-        title  :'Grow your business',
-        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
+        title  :'System Integration',
+        text: 'Seamlessly connect your existing enterprise systems, databases, and cloud services into a unified platform that enables real-time data flow and collaboration.',
       },
       {
         image:'planting.svg',
-        title  :'Social Impact Invesment',
-        text: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos',
+        title  :'Custom Development',
+        text: 'From web applications to enterprise solutions, our expert team builds tailored software that perfectly fits your unique business requirements and goals.',
       },
 
     ];
@@ -29,13 +29,13 @@ mixin Opportunity(config)
           p.mt-3.mb-md-0.mb-lg-2=config.text
 
 mixin Opportunities
-  section.py-5#Opportuanities
+  section.py-5#services
     +Background({ image: `${CWD}assets/img/illustrations/bg.png`, attrs: { style: { 'background-position': 'top left', 'background-size': '225px 755px','margin-top': '-17.5rem'} }, className: 'd-none d-sm-block' })
     .container
       .row
         .col-lg-9.mx-auto.text-center.mb-3
-          h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 New Opportunities
-          p.mb-5 We are the first and the only crowdfunding platform enabling you to help finance our farmers.
+          h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Our Services
+          p.mb-5 We provide comprehensive IT solutions designed to transform your business operations and accelerate growth.
       .row.flex-center.h-100
         .col-xl-9
           .row

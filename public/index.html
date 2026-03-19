@@ -6,16 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Processware | Intelligent Process Automation Solutions</title>
 
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>Zoufarm | Landing, Corporate &amp; Business Templatee</title>
-
-
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
@@ -24,66 +16,65 @@
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
-
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
 
+    <style>
+      .lang-switch { display: inline-flex; gap: 4px; margin-right: 12px; }
+      .lang-switch .btn { padding: 4px 10px; font-size: 0.8rem; border-radius: 4px; }
+      .lang-switch .btn.active { background-color: #0BAC56; color: #fff; border-color: #0BAC56; }
+      .lang-switch .btn:not(.active) { background-color: transparent; color: #555; border: 1px solid #ccc; }
+    </style>
   </head>
 
 
   <body>
 
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-light opacity-85" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.png" alt="" width="50" /><span class="text-theme font-monospace fs-4 ps-2">Zou</span></a>
+        <div class="container"><a class="navbar-brand" href="index.html"><img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.svg" alt="" width="50" /><span class="text-theme font-monospace fs-4 ps-2">Processware</span></a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="#header">Home</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#Opportuanities">Opportuanities</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#testimonial">Testimonial</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#invest">Invest</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#contact">Contact </a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="#header" data-en="Home" data-ko="홈">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#services" data-en="Services" data-ko="서비스">Services</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#solutions" data-en="Solutions" data-ko="솔루션">Solutions</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#testimonial" data-en="Clients" data-ko="고객사">Clients</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#contact" data-en="Contact" data-ko="문의">Contact</a></li>
             </ul>
+            <div class="lang-switch">
+              <button class="btn active" id="btn-en" onclick="switchLang('en')">EN</button>
+              <button class="btn" id="btn-ko" onclick="switchLang('ko')">KO</button>
+            </div>
             <form class="d-flex">
-              <button class="btn btn-lg btn-dark bg-gradient order-0" type="submit">Sign Up</button>
+              <button class="btn btn-lg btn-dark bg-gradient order-0" type="submit" data-en="Contact Us" data-ko="문의하기">Contact Us</button>
             </form>
           </div>
         </div>
       </nav>
+
+      <!-- Hero Section -->
       <section class="py-0" id="header">
-        <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero-header.png);background-position:right top;background-size:contain;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="bg-holder d-md-none" style="background-image:url(assets/img/illustrations/hero-bg.png);background-position:right top;background-size:contain;">
-        </div>
-        <!--/.bg-holder-->
-
+        <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero-header.svg);background-position:right top;background-size:contain;"></div>
+        <div class="bg-holder d-md-none" style="background-image:url(assets/img/illustrations/hero-bg.svg);background-position:right top;background-size:contain;"></div>
         <div class="container">
           <div class="row align-items-center min-vh-75 min-vh-lg-100">
             <div class="col-md-7 col-lg-6 col-xxl-5 py-6 text-sm-start text-center">
-              <h1 class="mt-6 mb-sm-4 fw-semi-bold lh-sm fs-4 fs-lg-5 fs-xl-6">A New Way to Invest <br class="d-block d-lg-block" />in Agriculture</h1>
-              <p class="mb-4 fs-1">Zou provides farmes, ranchers, private foresters, and agricultural producers with online self service applications and educational materials.</p><a class="btn btn-lg btn-success" href="#" role="button">Invest Now</a>
+              <h1 class="mt-6 mb-sm-4 fw-semi-bold lh-sm fs-4 fs-lg-5 fs-xl-6" data-en="Intelligent Process<br/>Automation Solutions" data-ko="지능형 프로세스<br/>자동화 솔루션">Intelligent Process<br/>Automation Solutions</h1>
+              <p class="mb-4 fs-1" data-en="Processware delivers cutting-edge software solutions that streamline your business processes, boost productivity, and drive digital transformation for enterprises of all sizes." data-ko="프로세스웨어는 비즈니스 프로세스를 혁신하고, 생산성을 높이며, 모든 규모의 기업을 위한 디지털 전환을 이끄는 최첨단 소프트웨어 솔루션을 제공합니다.">Processware delivers cutting-edge software solutions that streamline your business processes, boost productivity, and drive digital transformation for enterprises of all sizes.</p>
+              <a class="btn btn-lg btn-success" href="#contact" role="button" data-en="Get Started" data-ko="시작하기">Get Started</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="py-5" id="Opportuanities">
-        <div class="bg-holder d-none d-sm-block" style="background-image:url(assets/img/illustrations/bg.png);background-position:top left;background-size:225px 755px;margin-top:-17.5rem;">
-        </div>
-        <!--/.bg-holder-->
 
+      <!-- Services Section -->
+      <section class="py-5" id="services">
+        <div class="bg-holder d-none d-sm-block" style="background-image:url(assets/img/illustrations/bg.png);background-position:top left;background-size:225px 755px;margin-top:-17.5rem;"></div>
         <div class="container">
           <div class="row">
             <div class="col-lg-9 mx-auto text-center mb-3">
-              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">New Opportunities</h5>
-              <p class="mb-5">We are the first and the only crowdfunding platform enabling you to help finance our farmers.</p>
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3" data-en="Our Services" data-ko="서비스 소개">Our Services</h5>
+              <p class="mb-5" data-en="We provide comprehensive IT solutions designed to transform your business operations and accelerate growth." data-ko="비즈니스 운영을 혁신하고 성장을 가속화하는 종합 IT 솔루션을 제공합니다.">We provide comprehensive IT solutions designed to transform your business operations and accelerate growth.</p>
             </div>
           </div>
           <div class="row flex-center h-100">
@@ -93,8 +84,8 @@
                   <div class="card h-100 shadow px-4 px-md-2 px-lg-3 card-span pt-6">
                     <div class="text-center text-md-start card-hover"><img class="ps-3 icons" src="assets/img/icons/farmer.svg" height="60" alt="" />
                       <div class="card-body">
-                        <h6 class="fw-bold fs-1 heading-color">Connect with our farmers</h6>
-                        <p class="mt-3 mb-md-0 mb-lg-2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione</p>
+                        <h6 class="fw-bold fs-1 heading-color" data-en="Process Automation" data-ko="프로세스 자동화">Process Automation</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-2" data-en="Eliminate repetitive tasks and manual workflows with intelligent automation. Our RPA and AI-powered tools accelerate operations and reduce human error." data-ko="지능형 자동화로 반복 작업과 수동 워크플로우를 제거합니다. RPA와 AI 기반 도구로 운영을 가속화하고 휴먼 에러를 줄입니다.">Eliminate repetitive tasks and manual workflows with intelligent automation. Our RPA and AI-powered tools accelerate operations and reduce human error.</p>
                       </div>
                     </div>
                   </div>
@@ -103,8 +94,8 @@
                   <div class="card h-100 shadow px-4 px-md-2 px-lg-3 card-span pt-6">
                     <div class="text-center text-md-start card-hover"><img class="ps-3 icons" src="assets/img/icons/growth.svg" height="60" alt="" />
                       <div class="card-body">
-                        <h6 class="fw-bold fs-1 heading-color">Grow your business</h6>
-                        <p class="mt-3 mb-md-0 mb-lg-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <h6 class="fw-bold fs-1 heading-color" data-en="System Integration" data-ko="시스템 통합">System Integration</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-2" data-en="Seamlessly connect your existing enterprise systems, databases, and cloud services into a unified platform that enables real-time data flow and collaboration." data-ko="기존 엔터프라이즈 시스템, 데이터베이스, 클라우드 서비스를 하나의 통합 플랫폼으로 연결하여 실시간 데이터 흐름과 협업을 지원합니다.">Seamlessly connect your existing enterprise systems, databases, and cloud services into a unified platform that enables real-time data flow and collaboration.</p>
                       </div>
                     </div>
                   </div>
@@ -113,8 +104,8 @@
                   <div class="card h-100 shadow px-4 px-md-2 px-lg-3 card-span pt-6">
                     <div class="text-center text-md-start card-hover"><img class="ps-3 icons" src="assets/img/icons/planting.svg" height="60" alt="" />
                       <div class="card-body">
-                        <h6 class="fw-bold fs-1 heading-color">Social Impact Invesment</h6>
-                        <p class="mt-3 mb-md-0 mb-lg-2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos</p>
+                        <h6 class="fw-bold fs-1 heading-color" data-en="Custom Development" data-ko="맞춤형 개발">Custom Development</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-2" data-en="From web applications to enterprise solutions, our expert team builds tailored software that perfectly fits your unique business requirements and goals." data-ko="웹 애플리케이션부터 엔터프라이즈 솔루션까지, 전문 팀이 비즈니스 요구사항에 완벽히 맞는 맞춤형 소프트웨어를 구축합니다.">From web applications to enterprise solutions, our expert team builds tailored software that perfectly fits your unique business requirements and goals.</p>
                       </div>
                     </div>
                   </div>
@@ -125,28 +116,25 @@
         </div>
       </section>
 
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-5" id="invest">
-
+      <!-- Solutions Section -->
+      <section class="py-5" id="solutions">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-9 mb-3">
               <div class="row">
                 <div class="col-lg-9 mb-3">
-                  <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Invest on your convenience</h5>
-                  <p class="mb-5">Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla</p>
+                  <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3" data-en="Solutions for Every Challenge" data-ko="모든 도전을 위한 솔루션">Solutions for Every Challenge</h5>
+                  <p class="mb-5" data-en="We deliver end-to-end technology solutions that empower businesses to innovate, scale, and stay ahead of the competition in today's digital landscape." data-ko="오늘날의 디지털 환경에서 기업이 혁신하고, 성장하며, 경쟁에서 앞서 나갈 수 있도록 엔드투엔드 기술 솔루션을 제공합니다.">We deliver end-to-end technology solutions that empower businesses to innovate, scale, and stay ahead of the competition in today's digital landscape.</p>
                 </div>
                 <div class="col-md-6 mb-5">
                   <div class="card text-white"><img class="card-img" src="assets/img/gallery/short-terms.png" alt="..." />
                     <div class="card-img-overlay d-flex flex-column justify-content-center px-5 px-md-3 px-lg-5 bg-dark-gradient">
-                      <h6 class="text-success pt-2">NEW FARM TODAY</h6>
+                      <h6 class="text-success pt-2" data-en="CLOUD SOLUTIONS" data-ko="클라우드 솔루션">CLOUD SOLUTIONS</h6>
                       <hr class="text-white" style="height:0.12rem;width:2.813rem" />
                       <div class="pt-lg-3">
-                        <h6 class="fw-bold text-white fs-1 fs-md-2 fs-lg-3 w-xxl-50">Short terms investment</h6>
-                        <p class="w-xxl-75">Invest in farms that will be ready for harvest in 3-18 months</p>
-                        <button class="btn btn-lg btn-light text-success" type="button">Browse Farm</button>
+                        <h6 class="fw-bold text-white fs-1 fs-md-2 fs-lg-3 w-xxl-50" data-en="Scalable Infrastructure" data-ko="확장 가능한 인프라">Scalable Infrastructure</h6>
+                        <p class="w-xxl-75" data-en="Migrate to the cloud with confidence. We design and manage secure, scalable cloud architectures tailored to your needs." data-ko="안심하고 클라우드로 전환하세요. 맞춤형 보안 클라우드 아키텍처를 설계하고 관리합니다.">Migrate to the cloud with confidence. We design and manage secure, scalable cloud architectures tailored to your needs.</p>
+                        <button class="btn btn-lg btn-light text-success" type="button" data-en="Learn More" data-ko="자세히 보기">Learn More</button>
                       </div>
                     </div>
                   </div>
@@ -154,12 +142,12 @@
                 <div class="col-md-6 mb-5">
                   <div class="card text-white"><img class="card-img" src="assets/img/gallery/fully-funded.png" alt="..." />
                     <div class="card-img-overlay d-flex flex-column justify-content-center px-5 px-md-3 px-lg-5 bg-light-gradient">
-                      <h6 class="text-success pt-2">FULLY FUNDED</h6>
+                      <h6 class="text-success pt-2" data-en="AI &amp; DATA ANALYTICS" data-ko="AI &amp; 데이터 분석">AI &amp; DATA ANALYTICS</h6>
                       <hr class="text-white" style="height:0.12rem;width:2.813rem" />
                       <div class="pt-lg-3">
-                        <h6 class="fw-bold text-white fs-1 fs-md-2 fs-lg-3 w-xxl-50">Long terms investment</h6>
-                        <p class="w-xxl-75">Consider farms that have long term investment program.</p>
-                        <button class="btn btn-lg btn-light text-success" type="button">Learn More</button>
+                        <h6 class="fw-bold text-white fs-1 fs-md-2 fs-lg-3 w-xxl-50" data-en="Data-Driven Insights" data-ko="데이터 기반 인사이트">Data-Driven Insights</h6>
+                        <p class="w-xxl-75" data-en="Harness the power of AI and big data to uncover actionable insights that drive smarter business decisions." data-ko="AI와 빅데이터의 힘을 활용하여 더 스마트한 비즈니스 의사결정을 이끄는 실행 가능한 인사이트를 도출합니다.">Harness the power of AI and big data to uncover actionable insights that drive smarter business decisions.</p>
+                        <button class="btn btn-lg btn-light text-success" type="button" data-en="Explore" data-ko="살펴보기">Explore</button>
                       </div>
                     </div>
                   </div>
@@ -168,23 +156,16 @@
             </div>
           </div>
         </div>
-        <!-- end of .container-->
-
       </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
 
-
+      <!-- How We Work Section -->
       <section class="py-0">
-        <div class="bg-holder" style="background-image:url(assets/img/illustrations/how-it-works.png);background-position:center bottom;background-size:cover;">
-        </div>
-        <!--/.bg-holder-->
-
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/how-it-works.png);background-position:center bottom;background-size:cover;"></div>
         <div class="container-lg">
           <div class="row justify-content-center">
             <div class="col-sm-8 col-md-9 col-xl-5 text-center pt-8">
-              <h5 class="fw-bold fs-3 fs-xxl-5 lh-sm mb-3 text-white">How it works</h5>
-              <p class="mb-5 text-white">Take your pick from the supply chain and participate in agribusiness projects that are backed up not only by Zou, but also by the best land, family heritage, innovation and overall superior expertise.</p>
+              <h5 class="fw-bold fs-3 fs-xxl-5 lh-sm mb-3 text-white" data-en="How We Work" data-ko="업무 프로세스">How We Work</h5>
+              <p class="mb-5 text-white" data-en="Our proven four-step methodology ensures every project is delivered on time, within budget, and exceeds expectations. From initial consultation to ongoing support, we are your trusted technology partner." data-ko="검증된 4단계 방법론으로 모든 프로젝트를 기한 내, 예산 범위 안에서, 기대 이상으로 완수합니다. 초기 컨설팅부터 지속적인 지원까지, 신뢰할 수 있는 기술 파트너가 되겠습니다.">Our proven four-step methodology ensures every project is delivered on time, within budget, and exceeds expectations. From initial consultation to ongoing support, we are your trusted technology partner.</p>
             </div>
             <div class="col-sm-9 col-md-12 col-xxl-9">
               <div class="theme-tab">
@@ -198,40 +179,40 @@
                   <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
                     <div class="row align-items-center my-6 mx-auto">
                       <div class="col-md-6 col-lg-5 offset-md-1">
-                        <h3 class="fw-bold lh-base text-white">Select your farmshare and complete reservation form here.</h3>
+                        <h3 class="fw-bold lh-base text-white" data-en="Discovery &amp; Analysis: We listen to understand your business challenges." data-ko="발견 &amp; 분석: 비즈니스 과제를 깊이 이해하기 위해 경청합니다.">Discovery &amp; Analysis: We listen to understand your business challenges.</h3>
                       </div>
                       <div class="col-md-5 text-white offset-lg-1">
-                        <p class="mb-0">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere</p>
+                        <p class="mb-0" data-en="Our consultants work closely with your team to analyze existing workflows, identify pain points, and define clear objectives for digital transformation." data-ko="컨설턴트가 고객 팀과 긴밀히 협력하여 기존 워크플로우를 분석하고, 문제점을 파악하며, 디지털 전환을 위한 명확한 목표를 설정합니다.">Our consultants work closely with your team to analyze existing workflows, identify pain points, and define clear objectives for digital transformation.</p>
                       </div>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab-2">
                     <div class="row align-items-center my-6 mx-auto">
                       <div class="col-md-6 col-lg-5 offset-md-1">
-                        <h3 class="fw-bold lh-base text-white">The Farm Share has been one of the best new additions to our life</h3>
+                        <h3 class="fw-bold lh-base text-white" data-en="Strategy &amp; Design: We architect the perfect solution for your needs." data-ko="전략 &amp; 설계: 최적의 솔루션 아키텍처를 설계합니다.">Strategy &amp; Design: We architect the perfect solution for your needs.</h3>
                       </div>
                       <div class="col-md-5 text-white offset-lg-1">
-                        <p class="mb-0">We the farmers choose the vegetables in your share each week. A Farm Share is perfect for those who love the weekly surprise, and who look forward to cooking with inspiration from the seasons.</p>
+                        <p class="mb-0" data-en="Based on our analysis, we design a comprehensive solution blueprint including technology stack, integration points, and implementation roadmap with clear milestones." data-ko="분석 결과를 바탕으로 기술 스택, 통합 포인트, 명확한 마일스톤이 포함된 종합적인 솔루션 청사진을 설계합니다.">Based on our analysis, we design a comprehensive solution blueprint including technology stack, integration points, and implementation roadmap with clear milestones.</p>
                       </div>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab-3">
                     <div class="row align-items-center my-6 mx-auto">
                       <div class="col-md-6 col-lg-5 offset-md-1">
-                        <h3 class="fw-bold lh-base text-white">There is so much love and thought put into this CSA. You can feel that.</h3>
+                        <h3 class="fw-bold lh-base text-white" data-en="Development &amp; Integration: We build and connect with precision." data-ko="개발 &amp; 통합: 정밀하게 구축하고 연결합니다.">Development &amp; Integration: We build and connect with precision.</h3>
                       </div>
                       <div class="col-md-5 text-white offset-lg-1">
-                        <p class="mb-0">We the farmers choose the vegetables in your share each week. A Farm Share is perfect for those who love the weekly surprise, and who look forward to cooking with inspiration from the seasons.</p>
+                        <p class="mb-0" data-en="Our agile development team brings the solution to life, integrating seamlessly with your existing systems while maintaining rigorous quality assurance at every step." data-ko="애자일 개발 팀이 솔루션을 구현하며, 기존 시스템과 원활하게 통합하고 모든 단계에서 철저한 품질 보증을 유지합니다.">Our agile development team brings the solution to life, integrating seamlessly with your existing systems while maintaining rigorous quality assurance at every step.</p>
                       </div>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab-4">
                     <div class="row align-items-center my-6 mx-auto">
                       <div class="col-md-6 col-lg-5 offset-md-1">
-                        <h3 class="fw-bold lh-base text-white">The Farm Share has been one of the best new additions to our life</h3>
+                        <h3 class="fw-bold lh-base text-white" data-en="Deployment &amp; Support: We ensure long-term success and growth." data-ko="배포 &amp; 지원: 장기적인 성공과 성장을 보장합니다.">Deployment &amp; Support: We ensure long-term success and growth.</h3>
                       </div>
                       <div class="col-md-5 text-white offset-lg-1">
-                        <p class="mb-0">We the farmers choose the vegetables in your share each week. A Farm Share is perfect for those who love the weekly surprise, and who look forward to cooking with inspiration from the seasons.</p>
+                        <p class="mb-0" data-en="After thorough testing, we deploy your solution and provide ongoing maintenance, monitoring, and optimization to ensure peak performance and continuous improvement." data-ko="철저한 테스트 후 솔루션을 배포하고, 최고의 성능과 지속적인 개선을 위한 유지보수, 모니터링, 최적화를 제공합니다.">After thorough testing, we deploy your solution and provide ongoing maintenance, monitoring, and optimization to ensure peak performance and continuous improvement.</p>
                       </div>
                     </div>
                   </div>
@@ -241,15 +222,14 @@
           </div>
         </div>
       </section>
+
+      <!-- Testimonial Section -->
       <section class="py-8" id="testimonial">
         <div class="container-lg">
           <div class="row flex-center">
             <div class="col-12 col-lg-10 col-xl-12">
-              <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg.png);background-position:top left;background-size:120px 83px;">
-              </div>
-              <!--/.bg-holder-->
-
-              <h6 class="fs-3 fs-lg-4 fw-bold lh-sm">What investors like you <br />are saying about Zou</h6>
+              <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg.png);background-position:top left;background-size:120px 83px;"></div>
+              <h6 class="fs-3 fs-lg-4 fw-bold lh-sm" data-en="What our clients<br/>are saying about Processware" data-ko="고객사가 전하는<br/>프로세스웨어 이야기">What our clients<br/>are saying about Processware</h6>
             </div>
             <div class="carousel slide pt-3" id="carouselExampleDark" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -260,11 +240,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-1.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Fernando Soler</h5>
-                              <p class="fw-normal text-black">Telecommunication Engineer</p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="James Kim" data-ko="김재민">James Kim</h5>
+                              <p class="fw-normal text-black" data-en="CTO, Samsung SDS" data-ko="CTO, 삼성SDS">CTO, Samsung SDS</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae</p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;Processware transformed our legacy systems into a modern, cloud-native architecture. Their expertise in process automation saved us thousands of hours annually.&quot;" data-ko="&quot;프로세스웨어는 레거시 시스템을 최신 클라우드 네이티브 아키텍처로 전환해 주었습니다. 프로세스 자동화 전문성 덕분에 연간 수천 시간을 절약할 수 있었습니다.&quot;">&quot;Processware transformed our legacy systems into a modern, cloud-native architecture. Their expertise in process automation saved us thousands of hours annually.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -273,11 +253,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-2.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Ilone Pickford</h5>
-                              <p class="fw-normal text-black">Head of Agrogofund </p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="Sarah Park" data-ko="박서현">Sarah Park</h5>
+                              <p class="fw-normal text-black" data-en="VP of Engineering, LG CNS" data-ko="엔지니어링 부사장, LG CNS">VP of Engineering, LG CNS</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;The team at Processware delivered beyond our expectations. Their custom ERP integration streamlined our entire supply chain operations.&quot;" data-ko="&quot;프로세스웨어 팀은 기대 이상의 결과를 제공했습니다. 맞춤형 ERP 통합으로 전체 공급망 운영이 크게 개선되었습니다.&quot;">&quot;The team at Processware delivered beyond our expectations. Their custom ERP integration streamlined our entire supply chain operations.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -286,11 +266,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-3.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Ed O’Brien</h5>
-                              <p class="fw-normal text-black">Herbalist</p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="David Lee" data-ko="이동현">David Lee</h5>
+                              <p class="fw-normal text-black" data-en="Director of IT, Hyundai Mobis" data-ko="IT 디렉터, 현대모비스">Director of IT, Hyundai Mobis</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;Processware's AI-powered analytics platform gave us real-time visibility into our manufacturing processes like never before.&quot;" data-ko="&quot;프로세스웨어의 AI 기반 분석 플랫폼 덕분에 제조 공정에 대한 실시간 가시성을 이전과는 비교할 수 없는 수준으로 확보하게 되었습니다.&quot;">&quot;Processware's AI-powered analytics platform gave us real-time visibility into our manufacturing processes like never before.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -303,11 +283,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-1.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Fernando Soler</h5>
-                              <p class="fw-normal text-black">Telecommunication Engineer</p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="James Kim" data-ko="김재민">James Kim</h5>
+                              <p class="fw-normal text-black" data-en="CTO, Samsung SDS" data-ko="CTO, 삼성SDS">CTO, Samsung SDS</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae</p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;Processware transformed our legacy systems into a modern, cloud-native architecture. Their expertise in process automation saved us thousands of hours annually.&quot;" data-ko="&quot;프로세스웨어는 레거시 시스템을 최신 클라우드 네이티브 아키텍처로 전환해 주었습니다. 프로세스 자동화 전문성 덕분에 연간 수천 시간을 절약할 수 있었습니다.&quot;">&quot;Processware transformed our legacy systems into a modern, cloud-native architecture. Their expertise in process automation saved us thousands of hours annually.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -316,11 +296,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-2.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Ilone Pickford</h5>
-                              <p class="fw-normal text-black">Head of Agrogofund Groups </p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="Sarah Park" data-ko="박서현">Sarah Park</h5>
+                              <p class="fw-normal text-black" data-en="VP of Engineering, LG CNS" data-ko="엔지니어링 부사장, LG CNS">VP of Engineering, LG CNS</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;The team at Processware delivered beyond our expectations. Their custom ERP integration streamlined our entire supply chain operations.&quot;" data-ko="&quot;프로세스웨어 팀은 기대 이상의 결과를 제공했습니다. 맞춤형 ERP 통합으로 전체 공급망 운영이 크게 개선되었습니다.&quot;">&quot;The team at Processware delivered beyond our expectations. Their custom ERP integration streamlined our entire supply chain operations.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -329,11 +309,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-3.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Ed O’Brien</h5>
-                              <p class="fw-normal text-black">Herbalist</p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="David Lee" data-ko="이동현">David Lee</h5>
+                              <p class="fw-normal text-black" data-en="Director of IT, Hyundai Mobis" data-ko="IT 디렉터, 현대모비스">Director of IT, Hyundai Mobis</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;Ui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio</p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;Processware's AI-powered analytics platform gave us real-time visibility into our manufacturing processes like never before.&quot;" data-ko="&quot;프로세스웨어의 AI 기반 분석 플랫폼 덕분에 제조 공정에 대한 실시간 가시성을 이전과는 비교할 수 없는 수준으로 확보하게 되었습니다.&quot;">&quot;Processware's AI-powered analytics platform gave us real-time visibility into our manufacturing processes like never before.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -346,11 +326,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-1.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Fernando Soler</h5>
-                              <p class="fw-normal text-black">Telecommunication Engineer</p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="James Kim" data-ko="김재민">James Kim</h5>
+                              <p class="fw-normal text-black" data-en="CTO, Samsung SDS" data-ko="CTO, 삼성SDS">CTO, Samsung SDS</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae</p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;Processware transformed our legacy systems into a modern, cloud-native architecture. Their expertise in process automation saved us thousands of hours annually.&quot;" data-ko="&quot;프로세스웨어는 레거시 시스템을 최신 클라우드 네이티브 아키텍처로 전환해 주었습니다. 프로세스 자동화 전문성 덕분에 연간 수천 시간을 절약할 수 있었습니다.&quot;">&quot;Processware transformed our legacy systems into a modern, cloud-native architecture. Their expertise in process automation saved us thousands of hours annually.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -359,11 +339,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-2.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Ilone Pickford</h5>
-                              <p class="fw-normal text-black">Head of Agrogofund Groups </p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="Sarah Park" data-ko="박서현">Sarah Park</h5>
+                              <p class="fw-normal text-black" data-en="VP of Engineering, LG CNS" data-ko="엔지니어링 부사장, LG CNS">VP of Engineering, LG CNS</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;The team at Processware delivered beyond our expectations. Their custom ERP integration streamlined our entire supply chain operations.&quot;" data-ko="&quot;프로세스웨어 팀은 기대 이상의 결과를 제공했습니다. 맞춤형 ERP 통합으로 전체 공급망 운영이 크게 개선되었습니다.&quot;">&quot;The team at Processware delivered beyond our expectations. Their custom ERP integration streamlined our entire supply chain operations.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -372,11 +352,11 @@
                         <div class="card-body my-3">
                           <div class="align-items-xl-center d-block d-xl-flex px-3"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/user-3.png" width="50" alt="" />
                             <div class="flex-1 align-items-center pt-2">
-                              <h5 class="mb-0 fw-bold text-success">Ed O’Brien</h5>
-                              <p class="fw-normal text-black">Herbalist</p>
+                              <h5 class="mb-0 fw-bold text-success" data-en="David Lee" data-ko="이동현">David Lee</h5>
+                              <p class="fw-normal text-black" data-en="Director of IT, Hyundai Mobis" data-ko="IT 디렉터, 현대모비스">Director of IT, Hyundai Mobis</p>
                             </div>
                           </div>
-                          <p class="mb-0 px-3 px-md-2 px-xxl-3">&quot;Ui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio</p>
+                          <p class="mb-0 px-3 px-md-2 px-xxl-3" data-en="&quot;Processware's AI-powered analytics platform gave us real-time visibility into our manufacturing processes like never before.&quot;" data-ko="&quot;프로세스웨어의 AI 기반 분석 플랫폼 덕분에 제조 공정에 대한 실시간 가시성을 이전과는 비교할 수 없는 수준으로 확보하게 되었습니다.&quot;">&quot;Processware's AI-powered analytics platform gave us real-time visibility into our manufacturing processes like never before.&quot;</p>
                         </div>
                       </div>
                     </div>
@@ -391,71 +371,62 @@
         </div>
       </section>
 
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
+      <!-- CTA Section -->
       <section class="z-index-1 cta">
-
         <div class="container">
           <div class="row flex-center">
             <div class="col-12">
               <div class="card shadow h-100 py-5">
                 <div class="card-body text-center">
-                  <h1 class="fw-semi-bold mb-4">The future of &nbsp;<span class="text-success">Farm Investing</span> &nbsp; is Zou</h1><a class="btn btn-lg btn-success px-6" href="#" role="button">Invest Now</a>
+                  <h1 class="fw-semi-bold mb-4" data-en="The future of &nbsp;<span class='text-success'>Digital Transformation</span>&nbsp; is Processware" data-ko="<span class='text-success'>디지털 전환</span>의 미래, 프로세스웨어">The future of &nbsp;<span class="text-success">Digital Transformation</span>&nbsp; is Processware</h1>
+                  <a class="btn btn-lg btn-success px-6" href="#contact" role="button" data-en="Start Your Project" data-ko="프로젝트 시작하기">Start Your Project</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- end of .container-->
-
       </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
 
-
+      <!-- Footer Section -->
       <section class="py-0" id="contact">
-        <div class="bg-holder" style="background-image:url(assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;">
-        </div>
-        <!--/.bg-holder-->
-
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;"></div>
         <div class="container">
           <div class="row justify-content-lg-between min-vh-75" style="padding-top:21rem">
             <div class="col-6 col-sm-4 col-lg-auto mb-3">
-              <h6 class="mb-3 text-1000 fw-semi-bold">COMPANY </h6>
+              <h6 class="mb-3 text-1000 fw-semi-bold" data-en="COMPANY" data-ko="회사">COMPANY</h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">About Us</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Team</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Careers</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Contact</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="About Us" data-ko="회사 소개">About Us</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Team" data-ko="팀 소개">Team</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Careers" data-ko="채용">Careers</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Contact" data-ko="연락처">Contact</a></li>
               </ul>
             </div>
             <div class="col-6 col-sm-4 col-lg-auto mb-3">
-              <h6 class="mb-3 text-1000 fw-semi-bold">INVEST </h6>
+              <h6 class="mb-3 text-1000 fw-semi-bold" data-en="SERVICES" data-ko="서비스">SERVICES</h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Features</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">How it works</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Pricing</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Login</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Process Automation" data-ko="프로세스 자동화">Process Automation</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="System Integration" data-ko="시스템 통합">System Integration</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Cloud Solutions" data-ko="클라우드 솔루션">Cloud Solutions</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="AI &amp; Analytics" data-ko="AI &amp; 분석">AI &amp; Analytics</a></li>
               </ul>
             </div>
             <div class="col-6 col-sm-4 col-lg-auto mb-3">
-              <h6 class="mb-3 text-1000 fw-semi-bold">LEGAL </h6>
+              <h6 class="mb-3 text-1000 fw-semi-bold" data-en="LEGAL" data-ko="법적 고지">LEGAL</h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Privacy</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Terms</a></li>
-                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Security</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Privacy" data-ko="개인정보처리방침">Privacy</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Terms" data-ko="이용약관">Terms</a></li>
+                <li class="mb-3"><a class="text-700 text-decoration-none" href="#!" data-en="Security" data-ko="보안">Security</a></li>
               </ul>
             </div>
             <div class="col-12 col-lg-auto mb-3">
               <div class="card bg-success">
                 <div class="card-body p-sm-4">
-                  <h5 class="text-white">Blog Zou</h5>
-                  <p class="mb-0 text-white">write email to us<span class="text-white fs--1 fs-sm-1">info@zoufarm.com</span></p>
+                  <h5 class="text-white" data-en="Contact Us" data-ko="문의하기">Contact Us</h5>
+                  <p class="mb-0 text-white" data-en="Get in touch <span class='text-white fs--1 fs-sm-1'>info@processware.co.kr</span>" data-ko="이메일 문의 <span class='text-white fs--1 fs-sm-1'>info@processware.co.kr</span>">Get in touch<span class="text-white fs--1 fs-sm-1"> info@processware.co.kr</span></p>
                   <button class="btn btn-light text-success" type="button">
                     <svg class="bi bi-person me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#76C279" viewBox="0 0 16 16">
                       <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
-                    </svg>Sing In
+                    </svg><span data-en="Inquire" data-ko="문의">Inquire</span>
                   </button>
                 </div>
               </div>
@@ -463,35 +434,38 @@
           </div>
           <hr class="text-300 mb-0" />
           <div class="row flex-center py-5">
-            <div class="col-12 col-sm-8 col-md-6 text-center text-md-start"> <a class="text-decoration-none" href="#"><img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.png" alt="" width="40" /><span class="text-theme font-monospace fs-3 ps-2">Zou</span></a></div>
+            <div class="col-12 col-sm-8 col-md-6 text-center text-md-start"> <a class="text-decoration-none" href="#"><img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.svg" alt="" width="40" /><span class="text-theme font-monospace fs-3 ps-2">Processware</span></a></div>
             <div class="col-12 col-sm-8 col-md-6">
-              <p class="fs--1 text-dark my-2 text-center text-md-end">&copy; This template is made with&nbsp;
-                <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#76C279" viewBox="0 0 16 16">
-                  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
-                </svg>&nbsp;by&nbsp;<a class="text-dark" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
-              </p>
+              <p class="fs--1 text-dark my-2 text-center text-md-end" data-en="&copy; 2026 Processware. All rights reserved." data-ko="&copy; 2026 프로세스웨어. All rights reserved.">&copy; 2026 Processware. All rights reserved.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
 
-
-
-
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
     <script src="vendors/@popperjs/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+
+    <script>
+      function switchLang(lang) {
+        document.querySelectorAll('[data-en][data-ko]').forEach(function(el) {
+          el.innerHTML = el.getAttribute('data-' + lang);
+        });
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+        document.documentElement.lang = lang === 'ko' ? 'ko' : 'en-US';
+        localStorage.setItem('pw-lang', lang);
+      }
+      // Restore saved language preference
+      (function() {
+        var saved = localStorage.getItem('pw-lang');
+        if (saved) switchLang(saved);
+      })();
+    </script>
   </body>
 
 </html>

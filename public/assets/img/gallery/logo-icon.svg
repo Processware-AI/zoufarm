@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#0BAC56"/>
+
+  <!-- Outer gear teeth -->
+  <g fill="#fff">
+    <rect x="90" y="12" width="20" height="18" rx="3"/>
+    <rect x="90" y="170" width="20" height="18" rx="3"/>
+    <rect x="12" y="90" width="18" height="20" rx="3"/>
+    <rect x="170" y="90" width="18" height="20" rx="3"/>
+    <rect x="38" y="30" width="18" height="20" rx="3" transform="rotate(45 47 40)"/>
+    <rect x="144" y="150" width="18" height="20" rx="3" transform="rotate(45 153 160)"/>
+    <rect x="144" y="30" width="18" height="20" rx="3" transform="rotate(-45 153 40)"/>
+    <rect x="38" y="150" width="18" height="20" rx="3" transform="rotate(-45 47 160)"/>
+  </g>
+
+  <!-- Outer gear ring -->
+  <circle cx="100" cy="100" r="62" stroke="#fff" stroke-width="12" fill="none"/>
+
+  <!-- Inner circle -->
+  <circle cx="100" cy="100" r="38" fill="#0BAC56"/>
+
+  <!-- Process arrows (循環) forming a "P" feel -->
+  <!-- Arrow 1 - top right -->
+  <path d="M100 72 L100 58" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M88 70 L100 58 L112 70" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Circuit node dots -->
+  <circle cx="100" cy="100" r="8" fill="#fff"/>
+  <circle cx="100" cy="100" r="4" fill="#0BAC56"/>
+
+  <!-- Connection lines from center -->
+  <line x1="108" y1="100" x2="128" y2="100" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="92" y1="100" x2="72" y2="100" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="108" x2="100" y2="128" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- End nodes -->
+  <circle cx="130" cy="100" r="5" fill="#fff"/>
+  <circle cx="70" cy="100" r="5" fill="#fff"/>
+  <circle cx="100" cy="130" r="5" fill="#fff"/>
+</svg>

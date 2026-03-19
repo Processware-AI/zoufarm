@@ -3,25 +3,25 @@ append variables
     var invest= [
       {
         image:'short-terms.png',
-        title  :'NEW FARM TODAY',
-        subTitle  :'Short terms investment',
-        text: 'Invest in farms that will be ready for harvest in 3-18 months',
+        title  :'CLOUD SOLUTIONS',
+        subTitle  :'Scalable Infrastructure',
+        text: 'Migrate to the cloud with confidence. We design and manage secure, scalable cloud architectures tailored to your needs.',
         bg: 'bg-dark-gradient',
-        btnText:'Browse Farm',
+        btnText:'Learn More',
       },
       {
         image:'fully-funded.png',
-        title  :'FULLY FUNDED',
-        subTitle  :'Long terms investment',
-        text: 'Consider farms that have long term investment program.',
+        title  :'AI & DATA ANALYTICS',
+        subTitle  :'Data-Driven Insights',
+        text: 'Harness the power of AI and big data to uncover actionable insights that drive smarter business decisions.',
         bg: 'bg-light-gradient',
-        btnText:'Learn More',
+        btnText:'Explore',
       },
-      
+
     ];
 
 
-mixin InvestCard(config) 
+mixin InvestCard(config)
   .col-md-6.mb-5
     .card.text-white
       img.card-img(src=`${CWD}assets/img/gallery/${config.image}` alt='...')
@@ -32,14 +32,14 @@ mixin InvestCard(config)
           h6.fw-bold.text-white.fs-1.fs-md-2.fs-lg-3.w-xxl-50=config.subTitle
           p.w-xxl-75=config.text
           button.btn.btn-lg.btn-light.text-success(type='button')=config.btnText
-        
+
 mixin Invest
-  +Section.py-5#invest
+  +Section.py-5#solutions
     .row.justify-content-center
       .col-xl-9.mb-3
         .row
           .col-lg-9.mb-3
-            h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Invest on your convenience
-            p.mb-5 Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Solutions for Every Challenge
+            p.mb-5 We deliver end-to-end technology solutions that empower businesses to innovate, scale, and stay ahead of the competition in today's digital landscape.
           each item in invest
             +InvestCard(item)
